@@ -6,8 +6,7 @@ import loadScript from './loadScript'
 
 import 'bulma';
 
-const entryPoints = {
-};
+import entryPoints from './views.json'
 
 document.addEventListener('NovaMount', ({ detail }) => {
   const { name} = detail;

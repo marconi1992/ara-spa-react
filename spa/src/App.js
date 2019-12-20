@@ -1,4 +1,5 @@
 import React from 'react';
+import { Nova } from 'nova-react-bridge'
 
 import {
   BrowserRouter as Router,
@@ -16,6 +17,7 @@ function App() {
         <div className="container">
           <div className="navbar-menu">
             <Link className="navbar-item" to="/">Home</Link>
+            <Link className="navbar-item" to="/about">About</Link>
           </div>
         </div>
       </nav>
@@ -23,6 +25,9 @@ function App() {
       <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/about">
+            <Nova name="Example" data={{ title: "About Page" }}/>
           </Route>
       </Switch>
     </Router>  
