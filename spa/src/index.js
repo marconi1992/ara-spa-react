@@ -2,21 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import loadScript from './loadScript'
+import loadScript from './loadScript';
 
 import 'bulma';
 
-import entryPoints from './views.json'
+import entryPoints from './views.json';
 
 document.addEventListener('NovaMount', ({ detail }) => {
-  const { name} = detail;
+  const { name } = detail;
 
   const script = entryPoints[name];
 
   if (script) {
     loadScript(script);
   }
-})
+});
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
