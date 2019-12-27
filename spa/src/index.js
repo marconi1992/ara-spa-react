@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { loadScript } from 'nova-helpers';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import loadScript from './loadScript';
 
 import 'bulma';
 
