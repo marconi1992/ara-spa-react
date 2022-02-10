@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "bulma": "^0.8.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "nova-helpers": "^1.0.2-alpha.0",
     "nova-react-bridge": "^0.2.0",
     "react": "^16.12.0",
